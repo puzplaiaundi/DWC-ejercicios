@@ -45,7 +45,7 @@ form.addEventListener("submit", (event) => {
         suplemento = subtotal * 0.05;
     }
 
-    const total = subtotal - descuento - suplemento;
+    const total = subtotal - descuento + suplemento;
 
     subtotalSalida.textContent = formatearEuros(subtotal);
     descuentoSalida.textContent = formatearEuros(descuento);
