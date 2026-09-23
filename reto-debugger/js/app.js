@@ -41,7 +41,7 @@ form.addEventListener("submit", (event) => {
     }
 
     let suplemento = 0;
-    if (dias > 3) {
+    if (dias >= 3) {
         suplemento = subtotal * 0.05;
     }
 
