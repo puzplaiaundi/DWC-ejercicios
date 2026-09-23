@@ -10,6 +10,7 @@ const suplementoSalida = document.getElementById("suplemento");
 const totalSalida = document.getElementById("total");
 const mensajeSalida = document.getElementById("mensaje");
 
+
 const formatearEuros = (valor) => `${valor.toFixed(2)} €`;
 
 const limpiarResultado = () => {
@@ -45,7 +46,7 @@ form.addEventListener("submit", (event) => {
         suplemento = subtotal * 0.05;
     }
 
-    const total = subtotal - descuento - suplemento;
+    const total = subtotal - descuento + suplemento;
 
     subtotalSalida.textContent = formatearEuros(subtotal);
     descuentoSalida.textContent = formatearEuros(descuento);
