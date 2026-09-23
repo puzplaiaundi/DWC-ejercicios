@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva de actividad</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body>
+    <main class="contenedor">
+      <header>
+        <h1>Reserva de actividad</h1>
+        <p>Calcula el factorial de un número</p>
+      </header>
+
+      <section class="panel" aria-labelledby="numero-para-factorial">
+        <h2>Calculo con recursividad</h2>
+        <form id="form-factorial" novalidate>
+          <div class="campo">
+            <label for="numero">Numero para calcular</label>
+            <input
+              id="num-factorial"
+              name="num-factorial"
+              type="number"
+              min="1"
+              step="1"
+              required
+            />
+          </div>
+          <button id="btn-calcular" type="submit">Calcular factorial</button>
+        </form>
+      </section>
+      <section
+        class="panel"
+        aria-live="polite"
+        aria-labelledby="resultado-reserva"
+      >
+        <h2 id="resultado-reserva">Resultado</h2>
+        <dl class="resultado-lista">
+          <div>
+            <dt>Factorial </dt>
+            <dd id="factorial">0</dd>
+          </div>
+        </dl>
+        <p id="mensaje" class="mensaje"></p>
+      </section>
+    </main>
+  </body>
+</html>
