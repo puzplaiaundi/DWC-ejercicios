@@ -44,8 +44,8 @@ form.addEventListener("submit", (event) => {
     if (dias > 3) {
         suplemento = subtotal * 0.05;
     }
-
-    const total = subtotal - descuento - suplemento;
+    // Añadido "+" a suplemento para que se sume al total en lugar de restarse
+    const total = subtotal - descuento + suplemento;
 
     subtotalSalida.textContent = formatearEuros(subtotal);
     descuentoSalida.textContent = formatearEuros(descuento);
